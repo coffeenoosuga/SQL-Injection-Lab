@@ -36,7 +36,7 @@ For that we'll use `OR` and a condition that is always `true` which is  `1 = 1` 
 So we insert `'+or+1=1--`, in database we should get something like this\
 ```SELECT * FROM products WHERE category = '' OR 1=1--' AND stock = 1```
 everything after a `--` is now a comment and doesn't effect new request\
-<img width="409" height="52" alt="Screenshot 2026-10-20 at 13 19 54" src="https://github.com/user-attachments/assets/6a7ccf12-e858-418c-b0ed-bd7d3d6872f5" />
+<img width="409" height="52" alt="Screenshot 2026-10-20 at 13 19 54" src="https://github.com/user-attachments/assets/6a7ccf12-e858-418c-b0ed-bd7d3d6872f5" /> \
  And after execution on page we get:\
  <img width="1186" height="714" alt="Screenshot 2026-10-20 at 13 21 06" src="https://github.com/user-attachments/assets/babc556b-44b3-4984-a4fd-5d57f06e7e21" />
 which means we got all categories and products, that we weren't able to see before
